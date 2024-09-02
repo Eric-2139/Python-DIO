@@ -2,6 +2,6 @@
 
 cores = ['vermelho', 'azul', 'verde', 'azul']
 
-cores.count('vermelho')
-cores.count('azul')
-cores.count('verde')
+print(cores.count('vermelho'))
+print(cores.count('azul'))
+print(cores.count('verde'))
