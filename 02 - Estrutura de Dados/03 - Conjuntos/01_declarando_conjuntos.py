@@ -6,7 +6,7 @@ print(numeros)
 letras = set('abacaxi')
 print(letras)
 
-carros = set(('palio', 'uno', 'celta', 'palio',))
+carros = set(('palio', 'uno', 'celta', 'palio'))
 print(carros)
 
 linguagens = {'python', 'java', 'python', 'javascript'}
