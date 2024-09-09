@@ -1,0 +1,25 @@
+# Property: com ele você pode criar atributos gerenciados em suas classes e usa-los quando precisar modificar sua implementação interna sem alterar a api pública da classe
+
+class Foo:
+    def __init__(self, x=None):
+        self._x = x
+    
+    @property
+    def x(self):
+        return self._x or 0
+    
+    @x.setter
+    def x(self, value):
+        self._x += value
+
+    @x.deleter
+    def x(self):
+        self._x = 0 
+    
+foo = Foo(10)
+print(foo.x)
+del foo.x
+print(foo.x)
+
+foo.x = 10
+print(foo.x)
